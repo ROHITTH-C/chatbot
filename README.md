@@ -1,22 +1,25 @@
-# chatbot
-takes input of chat history and gives related mcqs and an article
-
-Dependencies
-Flask==2.1.2, 
-pdfplumber==0.7.4, 
-python-docx==0.8.11, 
-google-generative-ai==0.2.0, 
-Werkzeug==2.1.2, 
-fpdf==1.7.2
-
-steps to run 
-first in terminal run
-pip install Flask pdfplumber python-docx google-generative-ai Werkzeug fpdf
-next run 
-python web.py
-and go to the given link in terminal
-
-given test chat is:
+# chatbot<br>
+takes input of chat history and gives related mcqs and an article<br>
+<br>
+Dependencies<br>
+Flask==2.1.2, <br>
+pdfplumber==0.7.4, <br>
+python-docx==0.8.11, <br>
+google-generative-ai==0.2.0, <br>
+Werkzeug==2.1.2,  <br>
+fpdf==1.7.2 <br>
+<br>
+steps to run <br>
+first in terminal run below line<br>
+pip install Flask pdfplumber python-docx google-generative-ai Werkzeug fpdf<br>
+next<br>
+replace the the api key in web.py file<br>
+next run in terminal the following line<br>
+python web.py<br>
+and go to the given link in terminal<br>
+done
+<br>
+given test chat is:<br>
 
 Alice: Hey Bob, have you heard about the new features in Python 3.10?
 
@@ -77,9 +80,9 @@ D) Wait for the next Python version release.
 Correct Answer: C) Check for library compatibility before upgrading.
 
 Explanation: Alice cautions Bob to ensure his current libraries are compatible with Python 3.10 before upgrading.
-
+<br>
 and given article is:
-
+<br>
 Python 3.10: To Upgrade or Not to Upgrade?
 
 Introduction 
