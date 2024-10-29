@@ -1,15 +1,15 @@
 # chatbot<br>
 takes input of chat history and gives related mcqs and an article<br>
 <br>
-Dependencies<br>
-Flask==2.1.2, <br>
-pdfplumber==0.7.4, <br>
-python-docx==0.8.11, <br>
-google-generative-ai==0.2.0, <br>
-Werkzeug==2.1.2,  <br>
-fpdf==1.7.2 <br>
+**Dependencies**<br>
+Flask<br>
+pdfplumber<br>
+python-docx<br>
+google-generative-ai<br>
+Werkzeug <br>
+fpdf<br>
 <br>
-steps to run <br>
+**steps to run** <br>
 first in terminal run below line<br>
 pip install Flask pdfplumber python-docx google-generative-ai Werkzeug fpdf<br>
 next<br>
@@ -18,8 +18,8 @@ next run in terminal the following line<br>
 python web.py<br>
 and go to the given link in terminal<br>
 done
-<br>
-given test chat is:<br>
+<br><br>
+**given test chat is**:<br>
 
 Alice: Hey Bob, have you heard about the new features in Python 3.10?
 
@@ -46,8 +46,8 @@ Alice: If you’re using a lot of type hinting, it’s worth it. Just check for 
 Bob: Good point! I'll make sure to do that. Thanks for the info!
 
 Alice: No problem! Let me know if you have any questions while upgrading.
-
-output given is:
+<br><br>
+**output given was**:
 
 Question: Which Python 3.10 feature does Bob find powerful for its ability to match complex data structures?
 
@@ -80,8 +80,8 @@ D) Wait for the next Python version release.
 Correct Answer: C) Check for library compatibility before upgrading.
 
 Explanation: Alice cautions Bob to ensure his current libraries are compatible with Python 3.10 before upgrading.
-<br>
-and given article is:
+<br><br>
+**and given article is**:
 <br>
 Python 3.10: To Upgrade or Not to Upgrade?
 
