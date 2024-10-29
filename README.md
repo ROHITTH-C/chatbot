@@ -2,11 +2,11 @@
 takes input of chat history and gives related mcqs and an article
 
 Dependencies
-Flask==2.1.2
-pdfplumber==0.7.4
-python-docx==0.8.11
-google-generative-ai==0.2.0  # Adjust version as necessary
-Werkzeug==2.1.2
+Flask==2.1.2, 
+pdfplumber==0.7.4, 
+python-docx==0.8.11, 
+google-generative-ai==0.2.0, 
+Werkzeug==2.1.2, 
 fpdf==1.7.2
 
 steps to run 
