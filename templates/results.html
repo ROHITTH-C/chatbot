@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MCQ & Article Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Generated MCQs and Article</h1>
+        
+        <section class="mcq-section">
+            <h2>Generated MCQs:</h2>
+            {% for mcq in mcqs.split("## MCQ") %}
+                {% if mcq.strip() %}
+                    <div class="mcq">
+                        <p class="question"><strong>Question:</strong> {{ mcq.split('**Question:**')[1].split('A)')[0].strip() }}</p>
+                        <p><strong>Options:</strong></p>
+                        <p><strong>A)</strong> {{ mcq.split('A) ')[1].split('B)')[0].strip() }}</p>
+                        <p><strong>B)</strong> {{ mcq.split('B) ')[1].split('C)')[0].strip() }}</p>
+                        <p><strong>C)</strong> {{ mcq.split('C) ')[1].split('D)')[0].strip() }}</p>
+                        <p><strong>D)</strong> {{ mcq.split('D) ')[1].split('**Correct Answer:**')[0].strip() }}</p>
+                        <p class="correct-answer"><strong>Correct Answer:</strong> {{ mcq.split('**Correct Answer:**')[1].split('**Explanation:**')[0].strip() }}</p>
+                        <p class="explanation"><strong>Explanation:</strong> {{ mcq.split('**Explanation:**')[1].strip() }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            <a href="/download/{{ txt_filename }}" class="download-btn">Download MCQs as TXT</a>
+            <a href="/download/{{ pdf_filename }}" class="download-btn">Download MCQs as PDF</a>
+        </section>
+        
+        <section class="article-section">
+            <h2>Generated Article:</h2>
+            <div>
+                {% set sections = article.split("### ") %}
+                {% for section in sections %}
+                    {% if section.strip() %}
+                        {% set title, content = section.split(" ", 1) %}
+                        <h3>{{ title.strip() }}</h3>
+                        <p>{{ content.strip() | safe }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</body>
+</html>

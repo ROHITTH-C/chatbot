@@ -1,0 +1,49 @@
+## MCQ 1
+**Question:** What new feature in Python 3.10 allows for easier handling of complex data structures?
+A) Parenthesized context managers
+B) Union and Literal types
+C) Structural pattern matching
+D) Improved function signatures
+
+**Correct Answer:** C) Structural pattern matching
+**Explanation:**  Alice specifically mentions that structural pattern matching allows for easy matching of complex data structures. 
+
+## MCQ 2
+**Question:** How does type hinting in Python 3.10 improve upon previous versions?
+A) It introduces completely new types.
+B) It removes the need for type hinting altogether.
+C) It adds more precise types like Union and Literal. 
+D) It makes type hinting mandatory for all functions.
+
+**Correct Answer:** C) It adds more precise types like Union and Literal.
+**Explanation:** Alice states that Python 3.10 added more precise types, specifically mentioning Union and Literal.
+
+## MCQ 3
+**Question:**  According to Alice, what is a benefit of using type hinting in Python?
+A) It speeds up code execution significantly.
+B) It helps with debugging and understanding function signatures.
+C) It reduces the need for comments in the code.
+D) It automatically generates documentation for functions. 
+
+**Correct Answer:** B) It helps with debugging and understanding function signatures.
+**Explanation:** Alice mentions this benefit from her own experience using type hinting.
+
+## MCQ 4
+**Question:**  What concern does Alice raise regarding upgrading projects to Python 3.10?
+A) The new syntax for context managers might cause conflicts.
+B) Older code might not be compatible with structural pattern matching. 
+C) Existing libraries might not be compatible with Python 3.10.
+D) Type hinting in older code might cause unexpected errors.
+
+**Correct Answer:** C) Existing libraries might not be compatible with Python 3.10.
+**Explanation:** Alice specifically advises Bob to "check for library compatibility" before upgrading.
+
+## MCQ 5 
+**Question:** What is Bob's main motivation for considering upgrading to Python 3.10?
+A)  He wants to use the new syntax for parenthesized context managers.
+B) He is interested in the benefits of improved type hinting.
+C) He needs to work with complex data structures in his projects.
+D)  He wants to stay updated with the latest Python features.
+
+**Correct Answer:** B) He is interested in the benefits of improved type hinting.
+**Explanation:** While Bob shows interest in other features, he states he will upgrade "If [he's] using a lot of type hinting."
